@@ -1,0 +1,32 @@
+<!-- INTRODUÇÃO AO DOM -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio em DOM</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: rgb(0, 0, 0);
+            font: normal 12pt Serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>introdução ao DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript!</p>
+    <div id = 'inter'>clique em mim</div>
+
+    <script>
+        var paragrafo1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(paragrafo1.innerText) //innerText-> texto /  innerHTML -> pega o html literal
+        /*var minhaDiv = window.document.getElementById('inter')
+        minhaDiv.style.color = 'green'*/
+        
+        var d = document.querySelector('div#inter')
+
+    </script>
+</body> 
+</html>

@@ -1,0 +1,25 @@
+aprendizado sobre variaveis;
+
+em JavaScript as variaveis são declaradas com "var" e/ou "let", não necessitando de declarara se é int, float ou string
+
+os numeros para o JS são consideradso 'number', seja int ou float
+dados pessoais, como cpf, são 'strigs'
+
+tipos primitivos
+number{
+    todos tipos de números
+
+    tipos de numero:
+    NaN --> not a number
+    infinity --> infinito
+
+
+}
+string{
+    palavras ou letras e dados pessoais
+}
+boolean{
+    verdadeiro ou falso
+}
+
+typeof --> comando para saber os tipos primitivos das variaveis

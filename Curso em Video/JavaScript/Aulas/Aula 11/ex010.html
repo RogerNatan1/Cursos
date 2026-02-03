@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar BR-101</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        div#content {
+           display: flex;
+              flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #linha-carro {
+            margin-top: 20px;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Sistema de Multa</h1>
+        <div id="linha-carro">
+        Velicidade do carro: <input type="number" id="velocidade" value="" placeholder="0"> km/h<br>
+        <button onclick="verificarMulta()">Verificar Multa</button> 
+        </div>
+    </div>
+    <div id="resultado">
+
+    </div>
+    <script>
+        addEventListener("keydown", function(enter){
+            if(enter.key === "Enter"){
+                verificarMulta();
+            }
+        });
+      function verificarMulta(){
+        let velocidade = Number(document.getElementById("velocidade").value);
+        let resultado = document.getElementById("resultado");
+        if(velocidade === 0 || isNaN(velocidade)){
+            resultado.innerHTML = "Por favor, insira uma velocidade válida.";
+            return;
+        }
+        else{
+            resultado.innerHTML = `Sua velocidade: <strong>${velocidade}</strong> Km/h.`; 
+            if(velocidade > (80*1.1)){
+                resultado.innerHTML += `<br>Você foi MULTADO!`;
+                resultado.innerHTML += `<br>Valor da multa: <strong>R$ ${(velocidade - 80) * 7}</strong>`;
+            }    
+            resultado.innerHTML += `<br>Tenha um bom dia! Dirija com segurança!`;  
+        }
+
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        div#area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+            color: white;
+            border-radius: 20px; 
+            height: 80px;
+            font: italic 20pt Arial;
+            line-height: 80px;
+            text-align: center;
+            
+        }
+        div#area:hover{
+            background-color: lightgreen;
+            cursor: pointer;
+        }
+        button#meubotao{
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16pt;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"">
+        Interaja com o botão abaixo...
+    </div>
+    <button id="meubotao" onclick="interacao()">
+        Clique aqui também!
+    </button>
+    <script>
+        function interacao(){
+            let area = document.getElementById('area');
+            area.innerText = 'Obrigado!';
+        }
+    </script>
+</body>
+</html>

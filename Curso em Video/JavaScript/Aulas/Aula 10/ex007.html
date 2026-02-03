@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, textarea {
+            margin: 5px;
+            padding: 5px;
+            font-size: 1em;
+        }
+        button {
+            padding: 5px 10px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mini Calculadora!</h1>
+    <input type="number" name="txtn1" id="txtn1" placeholder="0"> +
+    <input type="number" name="txtn2" id="txtn2" placeholder="0"> =
+    <textarea name="resposta" id="resposta"></textarea>
+    <button onclick="somar()">Somar</button>
+
+    <script>
+        function somar(){
+            var n1 = document.getElementById('txtn1').value;
+            var n2 = document.getElementById('txtn2').value;
+            var soma = Number(n1) + Number(n2);
+            document.getElementById('resposta').value = `A soma entre ${n1} e ${n2} é igual a ${soma}`;
+        }
+    </script>
+</body>
+</html>
