@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: normal 14pt arial;
+    background-color: rgba(72, 72, 235, 0.705);
+    color: white;
+}
+.container{
+    background-color: white;
+    color: black;
+    margin: auto;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 600px;
+}
+.result{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foto{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+}

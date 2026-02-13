@@ -1,0 +1,34 @@
+body{
+    background-color: lightskyblue;
+    font: normal, 12px, arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    font: normal 15px arial;
+    font-weight: bold;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 550px;
+    height: 430px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.Frase{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.Imagem{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}

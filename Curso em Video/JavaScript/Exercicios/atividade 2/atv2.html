@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+    <link rel="stylesheet" href="atv2.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>Verificador de idade</h1>
+
+    </header>
+
+    <section class="container"> <!-- Bloco proposto no exercicio -->
+        <div class="infos"> <!-- Informações iniciais -->
+            
+            <p>
+                Ano de nascimento:  
+                <input type="number" name="idade" id="idade">
+            </p>
+
+            <p>
+                Sexo: 
+                <input type="radio" name="gender" id="sexo" value="Mulher" checked>
+                <label for="gender">Feminino</label>
+                <input type="radio" name="gender" id="sexo" value="Homem">
+                <label for="gender">Masculino</label>
+            </p>
+
+            <button onclick="verificaIdade()">Verificar</button>
+
+            <p class="msgPreencher">
+                Preencha os dados acima para ver o resultado!
+            </p>
+
+        </div>
+
+        <div class="result"> <!-- Resultado final -->
+            
+            <p>
+                texto irá aparecer aqui
+            </p>
+
+            <img class="foto" src="fotos/menino.jpeg">
+
+        </div>
+    </section>
+
+    <footer>
+
+        <p>&copy;Rodapé da Atividade 2</p>
+    
+    </footer>
+
+    <script src="atv2.js"></script>
+</body>
+</html>
